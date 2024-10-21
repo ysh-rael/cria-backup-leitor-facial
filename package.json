@@ -1,0 +1,35 @@
+{
+  "name": "Cria Backup Leitor Facial",
+  "version": "1.0.12",
+  "description": "Cria Backup do Leitor Facial hikvision via request ISAPI",
+  "main": "index.js",
+  "bin": "index.js",
+  "engines": {
+    "node": ">= 5.0.0"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "pkg ."
+  },
+  "keywords": [],
+  "author": "Ysh-rael",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.30.1",
+    "request": "^2.88.2"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "assets": [
+      "config/**/*",
+      "helper.js"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^4.3.4"
+  }
+}
